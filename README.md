@@ -34,7 +34,7 @@ Each contains:
 - `Realistic_Pooling_GPT_4.1/`
 
 #### Result Categories
-Each experiment is evaluated across three consistency categories:
+Each experiment is evaluated across three prompt categories:
 - **consistent_results/**: Results for consistent prompts
 - **inconsistent_results/**: Results for inconsistent prompts  
 - **neutral_results/**: Results for neutral prompts
