@@ -4,12 +4,15 @@ This repository contains experimental data and analysis for a research project, 
 
 ## Project Overview
 
-ToDO
+
 
 ## Repository Structure
 
 ### 📊 Experiment Results (`Experiment_Results/`)
 
+All experimental results are organized by dataset (TREC2020/TREC2021), experimental approach, and evaluation model. **Each experimental folder contains two subfolders based on the evaluation model used:**
+- **gemini2.0flash/**: Results evaluated using Google Gemini 2.0 Flash
+- **gpt4omini/**: Results evaluated using OpenAI GPT-4o-mini
 
 ##### 1. Single-Document Experiments
 Providing an individual document as a context to various base models:
@@ -23,7 +26,7 @@ Providing an individual document as a context to various base models:
 Each contains:
 - **adversarial_results/**: Responses when adversarial documents are provided
 - **non_rag_results/**: Baseline responses without RAG
-- **original_harmful_results/**:Responses when helpful documents are provided
+- **original_harmful_results/**: Responses when helpful documents are provided
 - **original_helpful_results/**: Responses when harmful documents are provided
 
 ##### 2. Paired Document Experiments
@@ -39,14 +42,14 @@ Each experiment is evaluated across three prompt categories:
 - **inconsistent_results/**: Results for inconsistent prompts  
 - **neutral_results/**: Results for neutral prompts
 
-#### Evaluation Models
-Results are provided for two evaluation LLMs:
-- **gemini2.0flash/**
-- **gpt4omini/**
 
 ### 📈 Visualizations (`Plots/`)
 
-Generated analysis plots organized by evaluation model:
+Generated analysis plots organized by evaluation model. **Each plot category contains separate visualizations for both evaluation models:**
+- **gemini2.0flash/**: Plots based on Gemini 2.0 Flash evaluations
+- **gpt4omini/**: Plots based on GPT-4o-mini evaluations
+
+Each evaluation model folder contains:
 - **Single-Document/**: Comparative analysis across different base models
 - **Paired-Document/**: Analysis of paired document approaches
 - **Realistic_Vs_Biased_Controlled/**: Comparison of pooling strategies
