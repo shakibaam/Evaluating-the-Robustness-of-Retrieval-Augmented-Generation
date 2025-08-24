@@ -1,7 +1,6 @@
-# TIST 2025: Evaluating the Robustness of Retrieval-Augmented Generation Against
-Adversarial Attacks in the Health Domain
+# Evaluating the Robustness of Retrieval-Augmented Generation Against Adversarial Attacks in the Health Domain
 
-This repository contains experimental data and analysis for a research project Evaluating the Robustness of Retrieval-Augmented Generation Against Adversarial Attacks in the Health Domain.
+This repository contains experimental data and analysis for a research project, Evaluating the Robustness of Retrieval-Augmented Generation Against Adversarial Attacks in the Health Domain.
 
 ## Project Overview
 
@@ -13,7 +12,7 @@ ToDO
 
 
 ##### 1. Single-Document Experiments
-Providing individual document as a context to various base models:
+Providing an individual document as a context to various base models:
 - `Single_Document_GPT_4.1/`
 - `Single_Document_GPT_5/`
 - `Single_Document_Claudi_3.5_Haiku/`
@@ -25,10 +24,10 @@ Each contains:
 - **adversarial_results/**: Responses when adversarial documents are provided
 - **non_rag_results/**: Baseline responses without RAG
 - **original_harmful_results/**:Responses when helpful documents are provided
-- **original_helpful_results/**: Responses when harmful documents are injected
+- **original_helpful_results/**: Responses when harmful documents are provided
 
 ##### 2. Paired Document Experiments
-- `Paired_Document_GPT_4.1/`: Tests with paired document retrieval
+- `Paired_Document_GPT_4.1/`: Paired-document results
 
 ##### 3. Pooling Strategy Experiments
 - `Biased_Controlled_Pooling_GPT_4.1/`
@@ -36,14 +35,14 @@ Each contains:
 
 #### Result Categories
 Each experiment is evaluated across three consistency categories:
-- **consistent_results/**: Responses consistent with expected stance
-- **inconsistent_results/**: Responses inconsistent with expected stance  
-- **neutral_results/**: Neutral or ambiguous responses
+- **consistent_results/**: Results for consistent prompts
+- **inconsistent_results/**: Results for inconsistent prompts  
+- **neutral_results/**: Results for neutral prompts
 
 #### Evaluation Models
 Results are provided for two evaluation LLMs:
-- **gemini2.0flash/**: Google Gemini 2.0 Flash evaluations
-- **gpt4omini/**: OpenAI GPT-4o Mini evaluations
+- **gemini2.0flash/**
+- **gpt4omini/**
 
 ### 📈 Visualizations (`Plots/`)
 
